@@ -1,0 +1,87 @@
+html{-webkit-font-smoothing: antialiased; border-top: 3px solid Cyan;}
+body{}
+.centered{text-align: center;}
+@font-face {
+    font-family: 'signpaintermedium';
+    src: url('../../fonts/signpainter-housescript-webfont.eot');
+    src: url('../../fonts/signpainter-housescript-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/signpainter-housescript-webfont.woff') format('woff'),
+         url('../../fonts/signpainter-housescript-webfont.ttf') format('truetype'),
+         url('../../fonts/signpainter-housescript-webfont.svg#signpaintermedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.text-center{text-align: center;}
+h1,h2,h3,h4,p,ol,ul{font-family: 'Open Sans', sans-serif; color: #6b6b6b;}
+#resume h4{font-family: signpaintermedium, sans-serif; font-size: 2em; margin-top: 40px; margin-bottom: 0;}
+p{line-height: 2;}
+ul, ol{margin-left: 20px;}
+.f-dropdown li{font-size: 1em; line-height: 2; cursor: auto;}
+.f-dropdown li:hover{background-color: transparent;}
+header h1{letter-spacing: 5px;}
+header h1, header h2, .project_info h4{color: #fff}
+header h2{font-size: 1.15em; width: 75%; margin: 0 auto; padding: 10px 20px; background-color: Cyan; color: #666; opacity:0.75; filter:alpha(opacity=75)}
+.project_info p{color: #fff;}
+footer p{color: #ccc;}
+a.button{display: block; width: 200px; margin: 0 auto; background-color: #FF7474; color: #fff; border: 1px solid #e26a6a;}
+a.button:hover{background-color: DarkCyan; border: 1px solid #066c6c;}
+.foundicon-settings{position: absolute;  top: 20px; right: 20px;  color: #aeaeae; font-size: 1.5em; }
+.foundicon-settings:hover{color: Cyan;}
+#resume p{margin-bottom: 0;}
+
+#about_drop{text-align: left;}
+
+img{display: block; margin: 10px auto;}
+
+header{position: relative; width: 100%; padding: 100px 0; background: DarkGrey url('../../build/img/cover.png') no-repeat top center fixed; -webkit-background-size: cover; background-size: cover;  color: #fff; text-align: center; }
+.project_info{display: none; width: 313px; height: 252px;  margin: 10px auto; padding: 20px; cursor: pointer;}
+.project_box img{position: relative; border: 1px solid #ddd; cursor: pointer;}
+#tmslaravel .project_info{background-color: #013B56}
+#tmsblog .project_info{background-color: #59B85E}
+#portal .project_info{background-color: #BF1E2E}
+#totalmortgage .project_info{background-color: #5CB65E}
+#agentdirectory .project_info{background-color: #0061AA}
+#brewtrail .project_info{background-color: #6D1214}
+#projects{margin-top: 75px; margin-bottom: 75px; }
+#about{width: 100%; background-color: #F9F9F9; padding: 75px 0;}
+#prefooter{width: 100%; background-color: #40909a; text-align: center; }
+#prefooter p{margin: 75px 0;}
+footer{width: 100%; background-color: #2C2E2D; text-align: center;}
+footer p{margin: 30px 0;}
+.social_icon{display: inline-block; width: 32px; height: 32px; margin: 0 30px; text-indent: -9000px; outline: none;}
+#github{background: url('../../build/img/icons/Github.png') top left no-repeat;}
+#linkedin{background: url('../../build/img/icons/LinkedIn.png') top left no-repeat;}
+#twitter{background: url('../../build/img/icons/Twitter.png') top left no-repeat;}
+
+/*full*/
+@media only screen and (min-width: 940px) {
+	header h2{width: 55%;}
+	header{padding: 200px 0;}
+}
+
+/*tablet & full*/
+@media only screen and (min-width: 768px) {
+	span.hide-for-small{display: inline-block !important;}
+}
+
+/*tablet*/
+@media only screen and (min-width: 768px ) and (max-width: 940px) {
+	header h2{width: 65%;}
+	header{padding: 150px 0;}
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
